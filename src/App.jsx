@@ -25,10 +25,7 @@ function App() {
 
   return (
     <div className='text-left'>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      {data?.map(item => <Item key={item.id} {...item}></Item>)}
+      {data?.map(item => <Item key={item.id} data={item}></Item>)}
     </div>
   )
 }
